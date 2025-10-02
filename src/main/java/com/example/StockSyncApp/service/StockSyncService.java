@@ -1,8 +1,9 @@
 package com.example.StockSyncApp.service;
 
-import org.springframework.stereotype.Service;
+import com.example.StockSyncApp.domain.Product;
 
-@Service
-public class StockSyncService {
+import java.util.List;
 
+public interface StockSyncService {
+    public List<Product> getProduct();
 }
