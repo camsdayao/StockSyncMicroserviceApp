@@ -1,4 +1,4 @@
-package com.example.StockSyncApp;
+package com.example.StockSyncApp.controller;
 
 import com.example.StockSyncApp.domain.Product;
 import lombok.extern.slf4j.Slf4j;

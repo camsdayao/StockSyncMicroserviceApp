@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  wiremock:
+    image: wiremock/wiremock:3.9.1
+    container_name: vendor-a-mock
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+      - ./__files:/home/wiremock/__files

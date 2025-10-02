@@ -1,0 +1,14 @@
+[
+  {
+    "sku": "1VA",
+    "name": "Apple",
+    "stockQuantity": 7,
+    "vendor": "VendorA"
+  },
+  {
+    "sku": "2VA",
+    "name": "Orange",
+    "stockQuantity": 3,
+    "vendor": "VendorA"
+  }
+]

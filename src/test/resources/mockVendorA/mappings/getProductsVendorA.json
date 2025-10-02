@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/vendor-a/products"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "vendorAStockResponse.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
