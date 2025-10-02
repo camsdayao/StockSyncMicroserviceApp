@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StockSyncAppApplication {
+public class StockSyncAppMain {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StockSyncAppApplication.class, args);
+		SpringApplication.run(StockSyncAppMain.class, args);
 	}
 
 }
