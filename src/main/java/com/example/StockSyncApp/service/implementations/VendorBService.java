@@ -1,7 +1,7 @@
 package com.example.StockSyncApp.service.implementations;
 
 import com.example.StockSyncApp.domain.Product;
-import com.example.StockSyncApp.service.StockSyncService;
+import com.example.StockSyncApp.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class VendorBService implements StockSyncService {
+public class VendorBService implements ProductService {
 
     @Value("${vendorB.file-path}")
     private String filePath;

@@ -1,7 +1,7 @@
 package com.example.StockSyncApp.service.implementations;
 
 import com.example.StockSyncApp.domain.Product;
-import com.example.StockSyncApp.service.StockSyncService;
+import com.example.StockSyncApp.service.ProductService;
 import com.example.StockSyncApp.service.dto.ProductDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class VendorAService implements StockSyncService {
+public class VendorAService implements ProductService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 

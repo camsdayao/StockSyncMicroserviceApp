@@ -1,9 +1,16 @@
 package com.example.StockSyncApp.service;
 
-import com.example.StockSyncApp.domain.Product;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
+@Slf4j
+@Service
+public class StockSyncService {
 
-public interface StockSyncService {
-    public List<Product> getProduct();
+    @Scheduled(fixedRate = 10000)
+    void sync(){
+        log.info("CAMS1");
+    }
+
 }
