@@ -25,7 +25,6 @@ public class VendorBService implements ProductService {
 
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
-            log.info(String.valueOf("CAMS " + bufferedReader));
             boolean isFirstLine = true;
             String line;
 

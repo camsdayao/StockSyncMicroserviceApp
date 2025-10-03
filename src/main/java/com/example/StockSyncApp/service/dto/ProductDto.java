@@ -1,7 +1,6 @@
 package com.example.StockSyncApp.service.dto;
 
 import lombok.Data;
-import lombok.Getter;
 
 @Data
 public class ProductDto {

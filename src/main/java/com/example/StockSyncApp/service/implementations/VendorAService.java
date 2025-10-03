@@ -1,8 +1,10 @@
 package com.example.StockSyncApp.service.implementations;
 
 import com.example.StockSyncApp.domain.Product;
+import com.example.StockSyncApp.repository.StockSyncRepository;
 import com.example.StockSyncApp.service.ProductService;
 import com.example.StockSyncApp.service.dto.ProductDto;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -13,8 +15,13 @@ import java.util.List;
 @Service
 public class VendorAService implements ProductService {
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    private StockSyncRepository stockSyncRepository;
 
+    private VendorAService(StockSyncRepository repo){
+        this.stockSyncRepository = repo;
+    };
+
+    private final RestTemplate restTemplate = new RestTemplate();
 
     @Override
     public List<Product> getProduct() {
